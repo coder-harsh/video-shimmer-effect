@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind skelton</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind cdn -->
+    <style>
+        #shimmer {
+            display: flex;
+            justify-content: center;
+            margin-top: 80px;
+            flex-direction: row;
+        }
+
+        .row1,
+        .row2 {
+            display: flex;
+            flex-direction: row;
+        }
+
+        #shimmer .shim-child {
+            margin: 0px 20px;
+            border: none;
+            width: 220px;
+        }
+
+        #shimmer img {
+            width: 50px;
+            height: 50px;
+        }
+
+        @media screen and (max-width:1000px) {
+
+            #shimmer {
+                align-items: center;
+                flex-direction: column;
+            }
+        }
+
+        @media screen and (max-width:470px) {
+            #shimmer .shim-child {
+                width: 70vw;
+            }
+
+            .row1,
+            .row2 {
+                flex-direction: column;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="shimmer">
+        <div class="row1">
+            <div role="status"
+                class="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-100 shim-child">
+                <div class="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+                    <img alt="svgImg" src="play-button.png" />
+                </div>
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-38 mb-4"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            </div>
+            <div role="status"
+                class="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700 shim-child">
+                <div class="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+                    <img alt="svgImg" src="play-button.png" />
+                </div>
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-38 mb-4"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            </div>
+        </div>
+        <div class="row2">
+            <div role="status"
+                class="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700 shim-child">
+                <div class="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+                    <img alt="svgImg" src="play-button.png" />
+                </div>
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-38 mb-4"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            </div>
+            <div role="status"
+                class="max-w-sm p-4 border border-gray-200 rounded shadow animate-pulse md:p-6 dark:border-gray-700 shim-child">
+                <div class="flex items-center justify-center h-48 mb-4 bg-gray-300 rounded dark:bg-gray-700">
+                    <img alt="svgImg" src="play-button.png" />
+                </div>
+                <div class="h-2.5 bg-gray-200 rounded-full dark:bg-gray-700 w-38 mb-4"></div>
+                <div class="h-2 bg-gray-200 rounded-full dark:bg-gray-700 mb-2.5"></div>
+            </div>
+        </div>
+
+
+
+
+        <script src=""></script>
+</body>
+
+</html>
